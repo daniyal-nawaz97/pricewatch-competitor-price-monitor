@@ -14,7 +14,7 @@ DB_PATH = DATA_DIR / "pricewatch.db"
 STATIC_DIR = BASE_DIR / "static"
 
 # Public URL of this app (used for links in emails). The demo competitor shops are served by the app itself.
-PUBLIC_BASE_URL = os.getenv("PUBLIC_BASE_URL", "").rstrip("/")
+PUBLIC_BASE_URL = (os.getenv("PUBLIC_BASE_URL") or os.getenv("RENDER_EXTERNAL_URL", "")).rstrip("/")  # Render sets RENDER_EXTERNAL_URL
 PORT = int(os.getenv("PORT", "8003"))
 SELF_URL = os.getenv("SELF_URL", f"http://127.0.0.1:{PORT}").rstrip("/")  # how the collector reaches the demo shops
 

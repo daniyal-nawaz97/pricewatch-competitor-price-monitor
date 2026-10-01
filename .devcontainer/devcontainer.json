@@ -1,0 +1,27 @@
+{
+  "name": "PriceWatch demo",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb"
+  },
+  "postCreateCommand": "pip install --user -q -r requirements.txt && cp -n .env.example .env",
+  "postStartCommand": "setsid nohup python -m uvicorn app.main:app --host 0.0.0.0 --port 8003 > /tmp/app.log 2>&1 < /dev/null &",
+  "postAttachCommand": "gh codespace ports visibility 8003:public -c \"$CODESPACE_NAME\" >/dev/null 2>&1 || true",
+  "forwardPorts": [
+    8003
+  ],
+  "portsAttributes": {
+    "8003": {
+      "label": "PriceWatch demo",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    }
+  }
+}
