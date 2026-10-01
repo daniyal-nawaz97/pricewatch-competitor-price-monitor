@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Sources &amp; Privacy · PriceWatch</title>
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/ui.css">
+  <style>:root{--accent:#4f46e5}.doc{max-width:720px;margin:0 auto;padding:40px 20px 80px}.doc h2{margin:28px 0 8px}.doc p,.doc li{color:var(--text-2)}.doc ul{padding-left:20px;display:grid;gap:6px}</style>
+</head>
+<body><div class="doc">
+  <a class="brand" href="/"><span class="brand-mark">P</span><span>PriceWatch</span></a>
+  <h1 style="margin-top:28px">Data sources &amp; privacy</h1>
+  <p style="margin-top:8px">How competitor prices are collected, and how your own data is handled.</p>
+  <h2>Where the prices come from</h2>
+  <ul><li>Only <b>public product pages</b> that anyone can open in a browser. No logins, no paywalls, no private data.</li>
+    <li>You decide which competitors and which pages are tracked.</li>
+    <li>Each page is read <b>once a day</b>, with a pause of about 1.5 seconds between pages on the same site.</li>
+    <li>The collector identifies itself as "PriceWatchBot" and respects each site's <code>robots.txt</code>: if a site asks bots not to read a page, it isn't read.</li>
+    <li>Prices are read from the standard product information most stores publish (schema.org data), or from a selector you set for a site.</li></ul>
+  <h2>When a site changes</h2>
+  <p>Websites change designs or block automated visitors. The Competitors page shows the success rate for each site every day, and failed pages show the reason. Fixing broken sites is part of the monthly service.</p>
+  <h2>Your data</h2>
+  <ul><li>Your product list, prices and costs are private to your account and never shared with anyone, including competitors.</li>
+    <li>Each client runs in a separate installation and database.</li><li>Price history is kept for as long as you're a client and deleted on request.</li>
+    <li>Passwords are stored as salted hashes; production uses HTTPS.</li></ul>
+  <h2>Legal note</h2>
+  <p>Reading public prices is common practice, but rules differ by country and by each website's terms of use. For important contracts, get advice from a lawyer on scraping and data rules. This page describes how the software works and is not legal advice.</p>
+</div></body>
+</html>

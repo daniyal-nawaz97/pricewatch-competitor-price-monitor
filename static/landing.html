@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PriceWatch: competitor price monitoring</title>
+  <meta name="description" content="Know every time a competitor changes their price, without checking a single website. Daily dashboard, alerts and a morning report.">
+  <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/ui.css">
+  <style>
+    :root { --accent: #4f46e5; } body { background: #fff; }
+    .l-nav { display: flex; align-items: center; justify-content: space-between; max-width: 1160px; margin: 0 auto; padding: 18px 24px; }
+    .hero { max-width: 1160px; margin: 0 auto; padding: 36px 24px 20px; display: grid; grid-template-columns: 1fr 1.25fr; gap: 48px; align-items: center; }
+    .hero h1 { font-size: 46px; line-height: 1.08; letter-spacing: -0.03em; } .hero p.lead { font-size: 19px; color: var(--text-2); margin: 18px 0 26px; }
+    .eyebrow { display: inline-flex; background: var(--accent-50); color: var(--accent-600); padding: 5px 12px; border-radius: 999px; font-weight: 600; font-size: 13px; margin-bottom: 18px; }
+    .shot { border-radius: 14px; box-shadow: 0 20px 60px rgba(16,24,40,.18); border: 1px solid var(--border); overflow: hidden; background: #fff; }
+    .shot img, .shot video { display: block; width: 100%; }
+    section { max-width: 1160px; margin: 0 auto; padding: 64px 24px; } .band { background: var(--bg); max-width: none; } .band > div { max-width: 1160px; margin: 0 auto; }
+    .section-title { text-align: center; max-width: 660px; margin: 0 auto 36px; } .section-title h2 { font-size: 32px; letter-spacing: -0.02em; } .section-title p { color: var(--text-2); margin-top: 10px; font-size: 17px; }
+    .benefit { padding: 26px; } .benefit .bi { font-size: 26px; margin-bottom: 10px; } .benefit h3 { font-size: 18px; margin-bottom: 6px; } .benefit p { color: var(--text-2); }
+    .email-wrap { display: grid; grid-template-columns: 1fr 380px; gap: 40px; align-items: center; }
+    .phone-img { border: 10px solid #111827; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow-lg); }
+    .numbers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; } .numbers .card { padding: 22px; text-align: center; } .numbers .big { font-size: 32px; font-weight: 800; color: var(--accent); }
+    .price { padding: 28px; display: flex; flex-direction: column; gap: 14px; } .price.featured { border: 2px solid var(--accent); box-shadow: var(--shadow); }
+    .price ul { margin: 0; padding-left: 18px; color: var(--text-2); display: grid; gap: 6px; } .price .amt { font-size: 28px; font-weight: 800; }
+    .cta { text-align: center; background: var(--accent); color: #fff; border-radius: 20px; padding: 54px 24px; } .cta h2 { font-size: 32px; } .cta p { opacity: .9; margin: 10px 0 24px; font-size: 17px; }
+    .cta .btn { background: #fff; color: var(--accent); border-color: #fff; }
+    ul.check { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; } ul.check li::before { content: "✓"; color: var(--ok); font-weight: 800; margin-right: 10px; }
+    footer { border-top: 1px solid var(--border); padding: 26px 24px; text-align: center; color: var(--text-3); font-size: 14px; }
+    @media (max-width: 900px) { .hero, .email-wrap { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } .numbers { grid-template-columns: repeat(2, 1fr); } section { padding: 44px 16px; } .l-nav { padding: 14px 16px; } }
+  </style>
+</head>
+<body>
+  <nav class="l-nav"><a class="brand" href="/landing"><span class="brand-mark">P</span><span>PriceWatch</span></a><a class="btn btn-primary" href="/#/login">View demo store</a></nav>
+  <div class="hero"><div>
+      <span class="eyebrow">For online stores, retailers and brands</span>
+      <h1>Know every time a competitor changes their price.</h1>
+      <p class="lead">Without checking a single website. Competitor prices and stock are collected every morning, compared with yours, and summarised in one short report.</p>
+      <div class="row wrap"><a class="btn btn-primary btn-lg cta-link" href="/#/login">Get a free 2-week sample</a><a class="btn btn-lg" href="#demo">Watch the demo</a></div></div>
+    <div class="shot"><img src="/static/img/screens/overview.png" alt="PriceWatch overview: where you stand, today's biggest changes, price trend"></div></div>
+  <section><div class="section-title"><h2>Protect your sales and your margin</h2><p>Stop guessing what the market is doing.</p></div>
+    <div class="grid grid-3">
+      <div class="card benefit"><div class="bi">⏱️</div><h3>Hours of checking, gone</h3><p>Hundreds of competitor product pages, checked every morning. Your team just reads the report.</p></div>
+      <div class="card benefit"><div class="bi">🔔</div><h3>Alerts that matter</h3><p>A competitor goes 5% below you, a top product goes out of stock: you hear about it by email, WhatsApp or Telegram.</p></div>
+      <div class="card benefit"><div class="bi">📈</div><h3>Full price history</h3><p>Every price ever recorded, never overwritten. See who moves first, and who follows.</p></div></div></section>
+  <section class="band"><div class="email-wrap" style="max-width:1000px">
+    <div><h2 style="font-size:32px;letter-spacing:-0.02em">The report owners actually read</h2><p class="muted" style="font-size:17px;margin-top:10px">Every morning: three numbers, the biggest moves, and what needs your attention. Short enough to read on the phone over breakfast.</p>
+      <ul class="check"><li>Price changes, where you're cheapest, where you're more expensive</li><li>Biggest moves with red / green arrows</li><li>Weekly summary: most aggressive competitor, positions gained and lost</li><li>PDF and Excel versions for the team</li></ul></div>
+    <div class="phone-img"><img src="/static/img/screens/email.png" alt="Morning price report email on a phone" style="display:block;width:100%"></div></div></section>
+  <section id="demo"><div style="max-width:1000px;margin:0 auto"><div class="section-title"><h2>See it in 2 minutes</h2></div>
+    <div class="shot" id="videoBox"><video controls preload="none" poster="/static/img/screens/product.png" src="/static/media/demo.webm"></video></div></div></section>
+  <section class="band"><div><div class="section-title"><h2>Measured on the demo store</h2><p>From our evaluation script. Your free sample shows the same numbers for your own products.</p></div><div class="numbers" id="numbers"></div></div></section>
+  <section id="pricing"><div class="section-title"><h2>Monthly plans</h2><p>Setup fee plus a monthly subscription. Start with a free 2-week pilot on 20 products.</p></div>
+    <div class="grid grid-3">
+      <div class="card price"><h3>Starter</h3><div class="amt">PKR 12,000<span class="small muted"> /month</span></div><ul><li>Up to 50 products</li><li>3 competitors</li><li>Daily morning report</li><li>In-app alerts</li></ul></div>
+      <div class="card price featured"><span class="badge info plain" style="align-self:flex-start">Most popular</span><h3>Business</h3><div class="amt">PKR 30,000<span class="small muted"> /month</span></div><ul><li>Up to 500 products</li><li>10 competitors</li><li>Alerts by email, WhatsApp, Telegram</li><li>Weekly summary &amp; team access</li></ul></div>
+      <div class="card price"><h3>Enterprise</h3><div class="amt">Custom</div><ul><li>Thousands of products, marketplaces</li><li>API &amp; Google Sheets sync</li><li>Pricing suggestions</li><li>Priority fixes when sites change</li></ul></div></div></section>
+  <section><div class="cta"><h2>Give us 20 of your products.</h2><p>We'll track them free for two weeks and send you the morning report every day.</p><a class="btn btn-lg cta-link" href="/#/login">Start the free sample</a></div></section>
+  <footer>PriceWatch · <a href="/privacy">Data sources &amp; privacy</a> · <a href="/#/login">Demo store</a></footer>
+  <script>
+    fetch("/api/app-info").then((r) => r.json()).then((i) => {
+      let href = null;
+      if (i.contact_whatsapp) href = `https://wa.me/${i.contact_whatsapp}?text=${encodeURIComponent("Hi, I'd like the free 2-week PriceWatch sample for 20 of our products.")}`;
+      else if (i.contact_email) href = `mailto:${i.contact_email}?subject=${encodeURIComponent("PriceWatch free 2-week sample")}`;
+      if (href) document.querySelectorAll(".cta-link").forEach((a) => { a.href = href; a.target = "_blank"; });
+    }).catch(() => {});
+    fetch("/static/results.json").then((r) => (r.ok ? r.json() : null)).then((s) => {
+      if (!s) { document.getElementById("numbers").closest("section").remove(); return; }
+      const items = [[`${s.price_accuracy}%`, `of ${s.live_prices_checked} live prices read exactly right`], [`${s.success_rate_today}%`, "pages read successfully"],
+        [`${s.changes_per_week}`, "competitor price changes caught in a week"], [`~${Math.round(s.hours_saved_per_week)} h`, "of manual checking saved per week"]];
+      document.getElementById("numbers").innerHTML = items.map(([n, l]) => `<div class="card"><div class="big">${n}</div><div class="muted small">${l}</div></div>`).join("");
+    }).catch(() => {});
+    const v = document.querySelector("#videoBox video");
+    fetch(v.getAttribute("src"), { method: "HEAD" }).then((r) => { if (!r.ok) throw 0; }).catch(() => { document.getElementById("videoBox").innerHTML = `<img src="/static/img/screens/product.png" alt="Product price history">`; });
+  </script>
+</body>
+</html>

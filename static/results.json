@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-01",
+  "products": 56,
+  "competitors": 3,
+  "pages": 142,
+  "live_prices_checked": 142,
+  "live_prices_correct": 142,
+  "price_accuracy": 100.0,
+  "stock_accuracy": 100.0,
+  "success_rate_today": 100.0,
+  "success_rate_week": 100.0,
+  "changes_per_week": 91,
+  "alerts_week": {
+    "out_of_stock": 10,
+    "price_drop": 14,
+    "cheaper_than_you": 8,
+    "back_in_stock": 7,
+    "price_increase": 14,
+    "new_product": 1
+  },
+  "example_insight": "MobiMart undercut or cut prices on 43 of your products in one week (2026-09-11 to 2026-09-17).",
+  "hours_saved_per_week": 12.4,
+  "run_seconds": 4.0
+}
